@@ -22,9 +22,28 @@ git clone https://github.com/MelAlejandrino/job-scraper-linkedin-glassdoor
 cd job-scraper-linkedin-glassdoor
 ```
 
-2. Install required dependencies:
+2. Create and activate a virtual environment:
+
+**For Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**For macOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Install required dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+4. When you're done working on the project, deactivate the virtual environment:
+```bash
+deactivate
 ```
 
 ## 🚀 Usage
@@ -81,4 +100,4 @@ Web scraping may be against the Terms of Service of some websites. Use this tool
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/job-scraper/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MelAlejandrino/job-scraper-linkedin-glassdoor/issues).
