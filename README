@@ -1,0 +1,84 @@
+# Job Scraper for LinkedIn and Glassdoor
+
+A Python tool that scrapes entry-level job listings from LinkedIn and Glassdoor based on specified job titles and locations.
+
+## 📋 Overview
+
+This repository contains scripts to collect job listings data from LinkedIn and Glassdoor, with a focus on entry-level and no-experience positions in the tech field. The scraper extracts job titles, qualifications, and locations, saving the results to a CSV file for analysis.
+
+## ✨ Features
+
+- Scrapes job listings from LinkedIn and Glassdoor
+- Filters for entry-level and no-experience positions
+- Extracts qualifications and requirements from job descriptions
+- Supports multiple job titles and locations
+- Saves results to CSV for further analysis
+
+## 🔧 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/job-scraper.git
+cd job-scraper
+```
+
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Usage
+
+Run the scraper with default settings:
+```bash
+python scraper.py
+```
+
+The script will search for entry-level positions across multiple job titles and locations, and save the results to `combined_entry_level_jobs_global.csv`.
+
+### Customization
+
+You can customize the job titles and locations by modifying the lists in `scraper.py`:
+
+```python
+job_titles = [
+    "Software Engineer",
+    "Data Analyst",
+    # Add or modify job titles here
+]
+
+locations = ["Philippines", "United States", "India", "Canada", "United Kingdom"]
+# Add or modify locations here
+```
+
+## 📁 Project Structure
+
+- `scraper.py` - Main script that handles job scraping and data processing
+- `utils.py` - Helper classes for interacting with LinkedIn and Glassdoor APIs
+- `requirements.txt` - List of required dependencies
+
+## 📊 Output
+
+The script generates a CSV file with the following columns:
+- `Title` - Job title
+- `Qualifications` - Extracted qualifications and requirements
+- `Source` - The platform (LinkedIn or Glassdoor)
+- `Location` - Country/location of the job
+
+## ⚠️ Disclaimer
+
+Web scraping may be against the Terms of Service of some websites. Use this tool responsibly and ethically. This tool is for educational purposes only. Please review and comply with the Terms of Service of LinkedIn and Glassdoor before using this scraper.
+
+## 🔑 Dependencies
+
+- [jobspy](https://github.com/zachwill/jobspy) - For interacting with job listing APIs
+- pandas - For data manipulation and export
+- tqdm - For progress bars
+
+## 📄 License
+
+[MIT License](LICENSE)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/job-scraper/issues).
