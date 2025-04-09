@@ -90,7 +90,7 @@ Web scraping may be against the Terms of Service of some websites. Use this tool
 
 ## 🔑 Dependencies
 
-- [jobspy](https://github.com/zachwill/jobspy) - For interacting with job listing APIs
+- [python-jobspy](https://github.com/speedyapply/JobSpy) - For interacting with job listing APIs
 - pandas - For data manipulation and export
 - tqdm - For progress bars
 
